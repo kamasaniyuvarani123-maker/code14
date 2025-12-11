@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define N 10
+void printNumbers(int value) {
+    if (value <= N) {
+        printf("%d ", value);
+        printNumbers(value + 1);
+    }
+}
+int main(void) {
+    printNumbers(1);
+    return 0;
+}
